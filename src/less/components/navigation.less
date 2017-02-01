@@ -1,0 +1,43 @@
+.main-nav {
+	position: absolute;
+	top: 94px;
+
+	width: 100%;
+
+	&__list {
+		display: flex;
+
+		margin: 0;
+		margin-left: 80px;
+
+		padding: 0;
+
+		list-style: none;
+	}
+
+	&__item {
+		
+		&:last-child {
+			margin-left: auto;
+
+			background: @darkred;
+		}
+	}
+
+	&__link {
+		display: block;
+
+		padding: 20px 30px;
+
+		font-size: 14px;
+
+		color: #ffffff;
+
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover {
+			color: @red;
+		}
+	}
+}

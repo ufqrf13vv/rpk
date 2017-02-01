@@ -1,0 +1,29 @@
+.questions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.question {
+	display: flex;
+	width: 540px;
+
+	padding: 50px;
+	box-sizing: border-box;
+
+	background: rgba(69, 69, 69, 0.8);
+	color: #ffffff;
+
+	&:hover {
+		background: @red;
+	}
+
+	&__image {
+		margin-right: 20px;
+	}
+
+	&__title {
+		font-size: 24px;
+		padding-top: 5px;
+		margin-bottom: 13px;
+	}
+}

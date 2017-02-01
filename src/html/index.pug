@@ -1,0 +1,74 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title РПК
+
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='../fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+		header.header
+			.container
+				.header__logo
+					img(src="../img/logo.png")
+				.header__contacts
+					.header__time
+						i.fa.fa-clock-o
+						span 09.00 - 18.00
+					a.header__email(href="mailto:mail@mail.ru")
+						i.fa.fa-envelope
+						span mail@mail.ru
+					a.header__phone(href="tel:111-11-11")
+						i.fa.fa-phone
+						span (423) 444-44-45
+					a.header__phone-link(href="#")
+
+		nav.main-nav
+			.container
+				ul.main-nav__list
+					li.main-nav__item
+						a.main-nav__link(href="#") О компании
+					li.main-nav__item
+						a.main-nav__link(href="#") Производим
+					li.main-nav__item
+						a.main-nav__link(href="#") Перерабатываем
+					li.main-nav__item
+						a.main-nav__link(href="#") Закупаем
+					li.main-nav__item
+						a.main-nav__link(href="#") Контакты
+					li.main-nav__item
+						a.main-nav__link(href="#") Закупка отходов
+
+		.main-slider
+			.main-slider__wrapper
+				.main-slider__slide
+					.main-slider__dark
+					.main-slider__title
+						.container
+							.wrapper
+								.main-slider__header Полиэтиленовая пленка
+								.main-slider__subheader и изделия из неё
+									a.main-slider__link(href="#")
+					.container
+						.wrapper
+							a.main-slider__catalog(href="#") Скачать каталог
+
+							.questions
+								.question
+									.question__image
+										img(src="../img/question-1.png")
+									.question__content
+										.question__title Задать вопрос
+										.question__text Напишите нам сейчас
+								.question
+									.question__image
+										img(src="../img/question-2.png")
+									.question__content
+										.question__title Запросить стоимость
+										.question__text по Вашим параметрам
+
+		.container
+			h2 Производство

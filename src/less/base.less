@@ -1,0 +1,51 @@
+body {
+	font-family: @regular;
+	font-size: 15px;
+
+	color: @base;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+
+	box-sizing: border-box;
+
+	position: relative;
+
+	@media @extrasmall {
+		width: @xs;
+	}
+
+	@media @small {
+		width: @sm;
+	}
+
+	@media @medium {
+		width: @md;
+	}
+
+	@media @large {
+		width: @lg;
+	}
+}
+
+.wrapper {
+	padding: 0 15px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.fa-clock-o,
+.fa-map-maker,
+.fa-mobile,
+.fa-envelope,
+.fa-phone {
+	color: @red;
+}
