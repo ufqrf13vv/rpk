@@ -1,0 +1,66 @@
+.your-question {
+
+	@media @extrasmall {
+		margin-bottom: 15px;	
+	}
+
+	&__title {
+		font-size: 20px;
+		padding-left: 42px;
+		margin-bottom: 20px;
+
+		position: relative;
+
+		&::before {
+			content: '';
+
+			width: 26px;
+			height: 26px;
+			background: url('../img/fquestion.png') no-repeat 0 0;
+
+			position: absolute;
+			left: 0;
+		}
+	}
+
+	& form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__input {
+		font-size: 14px;
+
+		background: transparent;
+		border: 1px solid #fff;
+		color: #fff;
+
+		padding: 7px 22px;
+		margin-right: 20px;
+
+		@media @extrasmall {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__submit {
+		text-align: center;
+
+		border: none;
+		background: #fff;
+
+		font-size: 14px;
+		cursor: pointer;
+
+		@media @small {
+			width: 145px;	
+		}
+
+		@media @extrasmall {
+			width: 100%;
+			padding: 7px;
+		}
+	}
+}

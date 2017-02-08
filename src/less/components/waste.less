@@ -1,0 +1,47 @@
+.waste {
+	margin: auto;
+	margin-top: 55px;
+	margin-bottom: 110px;
+
+	text-align: center;
+
+	@media @medium {
+		width: 600px;
+	}
+
+	@media @small {
+		width: 100%;
+	}
+
+	&__stages {
+		display: flex;
+		flex-wrap: wrap;
+
+		@media @medium {
+			justify-content: space-between;
+		}
+
+		@media @small {
+			justify-content: space-around;
+			margin-bottom: 190px;
+		}
+
+		@media @extrasmall {
+			margin-bottom: 90px;
+		}
+	}
+
+	&__stage {
+		width: 255px;
+		text-align: center;
+
+		@media @extrasmall {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__icon {
+		font-size: 65px;
+		color: @red;
+	}
+}

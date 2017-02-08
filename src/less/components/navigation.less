@@ -1,8 +1,13 @@
 .main-nav {
+	width: 100%;
+
+	z-index: 2;
 	position: absolute;
 	top: 94px;
 
-	width: 100%;
+	@media @extrasmall {
+		top: 150px;
+	}
 
 	&__list {
 		display: flex;
@@ -27,14 +32,26 @@
 	&__link {
 		display: block;
 
-		padding: 20px 30px;
-
 		font-size: 14px;
 
 		color: #ffffff;
 
 		text-decoration: none;
 		text-transform: uppercase;
+
+		@media @large {
+			padding: 20px 30px;			
+		}
+
+		@media @medium {
+			padding: 20px;
+			font-size: 14px;
+		}
+
+		@media @small {
+			font-size: 12px;
+			padding: 10px;
+		}
 
 		&:hover {
 			color: @red;

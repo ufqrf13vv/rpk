@@ -1,0 +1,97 @@
+.webuy {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media @medium {
+		margin-top: 110px;
+		margin-bottom: 85px;	
+	}
+
+	@media @small {
+		margin-top: 70px;
+		margin-bottom: 45px;
+	}
+
+	@media @extrasmall {
+		margin-top: 50px;
+		margin-bottom: 35px;
+	}
+
+	&__wrapper {
+		width: 49%;
+		background: url('../img/arrow-down.png') no-repeat 95% #cdcdcd;
+
+		overflow: hidden;
+		margin-bottom: 20px;
+
+		@media @extrasmall {
+			width: 100%;
+		}
+	}
+
+	&__select {
+		width: 106%;
+
+		background: transparent;
+		border: none;
+
+		@media @medium {
+			font-size: 24px;
+			padding: 22px 32px;			
+		}
+
+		@media @small {
+			font-size: 20px;
+			padding: 15px;
+		}
+
+		@media @extrasmall {
+			font-size: 18px;
+			padding: 10px;
+		}
+	}
+
+	&__item {
+		background: #cdcdcd;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+
+		@media @medium {
+			font-size: 24px;
+			padding: 22px 32px;			
+		}
+
+		@media @small {
+			width: 49%;
+			font-size: 20px;
+			padding: 15px;
+		}
+
+		@media @extrasmall {
+			width: 100%;
+			font-size: 18px;
+			padding: 10px;
+		}
+	}
+
+	&__item:last-child {
+		width: 100%;
+		font-size: 18px;
+		padding: 10px;
+	}
+
+	&__text {
+		margin-bottom: 130px;
+
+		@media @extrasmall {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.about__paragraph {
+	text-align: center;
+}

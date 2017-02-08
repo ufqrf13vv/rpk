@@ -1,12 +1,56 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
 body {
 	font-family: @regular;
-	font-size: 15px;
+	font-size: 16px;
+	line-height: 1.4;
 
 	color: @base;
 }
 
 img {
 	display: block;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+
+	font-size: 20px;
+	font-weight: normal;
+
+	margin-bottom: 40px;
+
+	color: @red;
+	position: relative;
+
+	&::after {
+		content: "";
+
+		height: 1px;
+		width: 185px;
+
+		background: @red;
+		margin-left: -92px;
+
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+	}
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: normal;
 }
 
 .container {
@@ -16,6 +60,7 @@ img {
 	box-sizing: border-box;
 
 	position: relative;
+	overflow: hidden;
 
 	@media @extrasmall {
 		width: @xs;
@@ -46,6 +91,7 @@ input:focus {
 .fa-map-maker,
 .fa-mobile,
 .fa-envelope,
-.fa-phone {
+.fa-phone,
+.fa-map-marker {
 	color: @red;
 }

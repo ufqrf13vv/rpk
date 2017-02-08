@@ -52,23 +52,297 @@ html
 								.main-slider__header Полиэтиленовая пленка
 								.main-slider__subheader и изделия из неё
 									a.main-slider__link(href="#")
-					.container
-						.wrapper
-							a.main-slider__catalog(href="#") Скачать каталог
+					.main-slider__catalog
+						.container
+							.wrapper
+								a.main-slider__catalog-link(href="#") Скачать каталог
 
-							.questions
-								.question
-									.question__image
-										img(src="../img/question-1.png")
-									.question__content
-										.question__title Задать вопрос
-										.question__text Напишите нам сейчас
-								.question
-									.question__image
-										img(src="../img/question-2.png")
-									.question__content
-										.question__title Запросить стоимость
-										.question__text по Вашим параметрам
+			.questions
+				.container
+					.wrapper
+						.questions__wrapper
+							.question
+								.question__image
+									img(src="../img/question-1.png")
+								.question__content
+									.question__title Задать вопрос
+									.question__text Напишите нам сейчас
+							.question
+								.question__image
+									img(src="../img/question-2.png")
+								.question__content
+									.question__title Запросить стоимость
+									.question__text по Вашим параметрам
 
 		.container
-			h2 Производство
+			.wrapper
+				h2.submenu__header Производство
+
+				.submenu
+					ul.submenu__list
+						.submenu__left
+							li.submenu__item
+								a.submenu__link(href="#")
+									.submenu__title Пакеты для мусора
+							li.submenu__item
+								a.submenu__link(href="#")
+									.submenu__title Пакеты типа "майка"
+							li.submenu__item
+								a.submenu__link(href="#")
+									.submenu__title Пленка
+							li.submenu__item
+								a.submenu__link(href="#")
+									.submenu__title Вторичный гранулят
+						li.submenu__item.submenu__item--last
+							a.submenu__link(href="#")
+								.submenu__title Фасовочные пакеты
+
+				h2 Переработка отходов
+				.waste 
+					p Мы закупаем и перерабатываем до 100 тонн отходов полиэтилена в месяц: полиэтилен высокого и низкого давления (ПНД, ПВД), плёнку стрейч, ПНД трубы, парниковую и термоусадочную плёнки, траловые сети. 
+					p Отходы подвергаются сортировке на специальном сортировочном комплексе. После комплексной переработки мы получаем гранулы, которые поступают в цех производства готовой продукции.
+
+				.waste__stages
+					.waste__stage
+						.waste__icon
+							i.fa.fa-magic
+						h3.waste__title Экономичность
+						.waste__text Вторичная переработка полимеров позволяет снизить цены на конечную продукцию.
+					.waste__stage
+						.waste__icon
+							i.fa.fa-gear
+						h3.waste__title Технологичность
+						.waste__text Применение современных технологий повышает эффективность производства.
+					.waste__stage
+						.waste__icon
+							i.fa.fa-pagelines
+						h3.waste__title Экологичность
+						.waste__text Вторичная переработка уменьшает количество не разлагаемого в природе мусора.
+					.waste__stage
+						.waste__icon
+							i.fa.fa-bomb
+						h3.waste__title Ответственность
+						.waste__text Вторичная переработка сокращает необходимость в импортном сырье, произведённом из углеводородов.
+
+				h2 Мы закупаем
+				.webuy
+					.webuy__wrapper
+						select.webuy__select
+							option Отходы полиэтилена
+							option п/э плёнка (ПВД, ПНД, стрейч)
+							option п/э канистры, ящики
+							option п/э труба
+					.webuy__wrapper
+						select.webuy__select
+							option Отходы ПЭТ
+							option преформа
+							option технологические отходы
+							option производства ПЭТ
+					.webuy__item Поддоны б/у
+					.webuy__item Картон
+					.webuy__item Первичное полиэтиленовое сырьё российских и иностранных производителей
+				.webuy__text Предоставляем тару (бигбэг). Предоставляем справку об утилизации. Взвешивание и расчёт на месте, возможен безналичный расчёт. Осуществляем вывоз собственным транспортом. Гарантируем выгодные условия сотрудничества и стабильность закупок.
+
+				h2 О компании
+				p.about__paragraph Общество с ограниченной ответственностью<br> «Русская полимерная компания»
+
+				.features
+					.feature
+						.feature__title История
+						.feature__text С 2007 г. мы занимаемся производством полиэтиленовой упаковочной продукции и её реализацией на Дальнем Востоке (Приморский край, Сахалин, Камчатка, Хабаровский край).
+					.feature
+						.feature__title Специализация
+						.feature__text Основная специализация ООО «РПК» — это сбор, закупка и переработка пластиковых отходов во вторичное гранулированное сырьё и последующее производство из вторичного гранулята различной упаковочной полиэтиленовой продукции.
+					.feature
+						.feature__title Наши преимущества
+						.feature__text Разнообразие ассортимента выпускаемой продукции, ее доступная цена и высокое качество оценены по достоинству клиентами компании, выбирающими при всем многообразии производителей упаковки на Дальнем Востоке именно продукцию Русской полимерной компании.
+
+				h2 Наши награды
+				.awards
+					.award
+						.award__image
+							.award__image-year 2010
+						.award__title Диплом
+						.award__text VI межрегиональной многоотраслевой «Выставки достижений Дальневосточного Федерального округа». За инновационные разработки в области переработки пластмасс.
+					.award
+						.award__image
+							.award__image-year 2013
+						.award__title Грамота
+						.award__text За помощь в проведении тематических экскурсий в рамках реализации долгосрочной целевой программы Администрации г. Владивостока «Совершенствование системы обращения с отходами» на 2012-2015 годы.
+					.award
+						.award__image
+							.award__image-year 2014
+						.award__title Благодарственное письмо
+						.award__text от Администрации Приморского края за активное участие во Всероссийской акции по очистке берегов малых рек «Нашим рекам и озерам — чистые берега».
+
+				h2 Наши преимущества
+				.our-features
+					.our-features__item
+						.our-features__icon
+							i.fa.fa-balance-scale
+						.our-features__wrapper
+							.our-features__title Соотношение цены и качества
+							.our-features__text Использование современного оборудования и применение специализированных добавок позволяет нам производить качественную продукцию по доступным ценам.
+					.our-features__item
+						.our-features__icon
+							i.fa.fa-compass
+						.our-features__wrapper
+							.our-features__title Работа напрямую с производителем
+							.our-features__text Работая с нами заказчик минует цепь посредников, выигрывая в цене, качестве, сроках поставки продукции.
+					.our-features__item
+						.our-features__icon
+							i.fa.fa-user
+						.our-features__wrapper
+							.our-features__title Индивидуальная работа с каждым клиентом
+							.our-features__text Мы готовы изготовить продукцию по индивидуальным размерам и требованиям заказчика.
+					.our-features__item
+						.our-features__icon
+							i.fa.fa-file-text-o
+						.our-features__wrapper
+							.our-features__title Сертифицированная продукция
+							.our-features__text Продукция, выпускаемая нашей компанией сертифицирована на соответсвие ГОСТ 32521-2013 «Мешки из полимерных пленок. Общие технические условия» и соответсвует Техническому регламенту Таможенного союза 005/2011 «О безопасности упаковки».
+					.our-features__item
+						.our-features__icon
+							i.fa.fa-briefcase
+						.our-features__wrapper
+							.our-features__title Профессионализм и ответственность
+							.our-features__text Мы добросовестно выполняем свои обязательства и зарекомендовали себя надежным партнером.
+
+				h2 Адреса и контакты
+				.map--mobile
+					.map__office
+						.map__office-title Центральный офис
+						.map__office-block
+							i.fa.fa-map-marker
+							.map__office-text Владивосток, ул. Суханова 4Б, оф. 8
+						.map__office-block
+							i.fa.fa-phone
+							.map__office-text (423) 243-22-00, факс: (423) 243-29-19
+						.map__office-block
+							i.fa.fa-envelope
+							.map__office-text sales@ruspk.ru
+						.map__office-block
+							i.fa.fa-clock-o
+							.map__office-text Пн-Чт: 9:00—18:00 Пт: 9:00—18:00 Сб-Вс: выходные
+					.map__office
+						.map__office-title Склад в г. Владивосток
+						.map__office-block
+							i.fa.fa-map-marker
+							.map__office-text Владивосток, ул. Снеговая 16
+						.map__office-block
+							i.fa.fa-phone
+							.map__office-text (423) 244-15-92
+						.map__office-block
+							i.fa.fa-clock-o
+							.map__office-text Пн-Чт: 8:00—17:00 Пт: 8:00—17:00 Сб-Вс: выходные
+					.map__office
+						.map__office-title Склад в г. Артём
+						.map__office-block
+							i.fa.fa-map-marker
+							.map__office-text Артем, ул. Кирова, 191
+						.map__office-block
+							i.fa.fa-phone
+							.map__office-text (42337) 3-99-76
+						.map__office-block
+							i.fa.fa-clock-o
+							.map__office-text Пн-Чт: 8:00—17:00 Пт: 8:00—17:00 Сб-Вс: выходные
+
+				.map
+					.map__adresses
+						.map__office
+							.map__office-title Центральный офис
+							.map__office-block
+								i.fa.fa-map-marker
+								.map__office-text Владивосток, ул. Суханова 4Б, оф. 8
+							.map__office-block
+								i.fa.fa-phone
+								.map__office-text (423) 243-22-00, факс: (423) 243-29-19
+							.map__office-block
+								i.fa.fa-envelope
+								.map__office-text sales@ruspk.ru
+							.map__office-block
+								i.fa.fa-clock-o
+								.map__office-text Пн-Чт: 9:00—18:00 Пт: 9:00—18:00 Сб-Вс: выходные
+
+						.map__storages
+							a.map__storages-store(href="") Склад в г. Владивосток
+							a.map__storages-store(href="") Склад в г. Артём
+
+				.phones
+					.phones__item
+						.phones__title Сбыт полиэтиленовой продукции
+						.phones__block
+							i.fa.fa-phone
+							.phones__number (423) 243-22-00, факс: (423) 243-29-19
+						.phones__block
+							i.fa.fa-mobile
+							.phones__number +7 (914) 791-22-39
+						.phones__block
+							i.fa.fa-envelope
+							.phones__number sales@ruspk.ru
+					.phones__item
+						.phones__title Закупка пластиковых отходов, поддонов б/у, картона
+						.phones__block
+							i.fa.fa-phone
+							.phones__number (423) 243-22-00
+						.phones__block
+							i.fa.fa-mobile
+							.phones__number +7 (914) 710-14-93, +7 (914) 710-14-89
+						.phones__block
+							i.fa.fa-envelope
+							.phones__number sales@ruspk.ru
+					.phones__item
+						.phones__title Закупка первичного сырья
+						.phones__block
+							i.fa.fa-phone
+							.phones__number (423) 243-22-00
+						.phones__block
+							i.fa.fa-mobile
+							.phones__number +7 (914) 710-14-89
+						.phones__block
+							i.fa.fa-envelope
+							.phones__number sales@ruspk.ru
+
+		footer.footer
+			.container
+				.wrapper
+					.footer__wrapper
+						.your-question
+							.your-question__title Остались вопросы
+							form
+								input.your-question__input(type="text", placeholder="Ваш телефон")
+								input.your-question__submit(type="submit", value="Отправить")
+
+						.footer__block
+							.footer__menu
+								.footer__menu-title О нас
+								ul.footer__menu-list
+									li.footer__menu-item
+										a.footer__menu-link(href="#") О компании
+									li.footer__menu-item
+										a.footer__menu-link(href="#") Контакты
+									li.footer__menu-item
+										a.footer__menu-link(href="#") Скачать каталог
+							.footer__menu
+								.footer__menu-title Услуги
+								ul.footer__menu-list
+									li.footer__menu-item
+										a.footer__menu-link(href="#") Производим
+									li.footer__menu-item
+										a.footer__menu-link(href="#") Перерабатываем
+									li.footer__menu-item
+										a.footer__menu-link(href="#") Закупаем
+
+						.request-call
+							.request-call__wrapper
+								i.fa.fa-phone
+								.request-call__text (423) 243 22 00
+							a.request-call__link(href="") Заказать звонок
+
+		.footer-bottom
+			.container
+				.wrapper
+					.footer-bottom__wrapper
+						.footer-bottom__block © ООО «Русская полимерная компания» 2015-2017
+						.footer-bottom__block Продвижение и поддержка сайта 
+							a(href="#") ITB-company

@@ -1,0 +1,128 @@
+.map {
+	height: 510px;
+	width: 100%;
+
+	border: 1px solid #b4b4b4;
+
+	margin-top: 80px;
+	margin-bottom: 90px;
+
+	position: relative;
+
+	@media @small {
+		display: block;
+	}
+
+	@media @extrasmall {
+		display: none;
+	}
+
+	&--mobile {
+
+		@media @small {
+			display: none;
+		}
+
+		@media @extrasmall {
+			display: block;
+			margin-bottom: 30px;
+		}
+
+		& .map__office {
+			background: none;
+		}
+	}
+
+	&__adresses {
+		height: 100%;
+		width: 300px;
+
+		border-right: 1px solid #b4b4b4;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__office {
+		width: 100%;
+
+		background: #f2f2f2;
+		border-bottom: 1px solid #b4b4b4;
+
+		padding: 30px 20px 30px 30px;
+
+		&-title {
+			font-size: 20px;
+			color: @red;
+
+			margin-bottom: 20px;
+
+			position: relative;
+
+			&::after {
+				content: '';
+
+				width: 7px;
+				height: 7px;
+
+				border-right: 2px solid @red;
+				border-bottom: 2px solid @red;
+
+				transform: rotate(-45deg);
+
+				position: absolute;
+				top: 13px;
+				right: 0;
+			}
+		}
+
+		&-block {
+			display: flex;
+			
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+
+			& > i {
+				margin-right: 15px;
+				padding-top: 5px;
+			}
+		}
+	}
+
+	&__storages {
+		height: 100%;
+		padding: 30px 20px 30px 30px;
+
+		font-size: 20px;
+
+		&-store {
+			display: block;
+
+			color: #454545;
+			text-decoration: none;
+			position: relative;
+
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+
+			&::after {
+				content: '';
+
+				width: 7px;
+				height: 7px;
+
+				border-right: 2px solid #adadad;
+				border-bottom: 2px solid #adadad;
+
+				transform: rotate(-45deg);
+
+				position: absolute;
+				top: 13px;
+				right: 0;
+			}
+		}
+	}
+}
